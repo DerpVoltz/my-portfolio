@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #76c6c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.underline {
+    border-bottom: 5px solid var(--primary-color);
+    margin: 5px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 0px;
+    top: 0;
+}
+
+header h1 {
+    background-color: var(--primary-color);
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px 10px 10px 50px;
+    justify-content: flex-start;
+}
+
+header a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a {
+    padding: 10px 15px;
+    font-size: 26px;
+}
