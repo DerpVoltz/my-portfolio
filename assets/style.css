@@ -8,18 +8,13 @@
     box-sizing: border-box;
 }
 
-.underline {
-    border-bottom: 5px solid var(--primary-color);
-    margin: 5px;
-}
-
+/* Styling Header */
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
     padding: 20px 0px;
-    top: 0;
 }
 
 header h1 {
@@ -27,7 +22,6 @@ header h1 {
     font-size: 50px;
     font-weight: bold;
     padding: 10px 10px 10px 50px;
-    justify-content: flex-start;
 }
 
 header a {
@@ -46,4 +40,25 @@ header ul {
 header ul li a {
     padding: 10px 15px;
     font-size: 26px;
+    border-bottom: 5px solid var(--primary-color);
+    margin: 5px;
+}
+
+/* Styling Hero */
+.hero {
+    background-image: url(./images/hero-background.jpg);
+    padding: 70px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 160px;
+}
+
+.hero div {
+    background-color: var(--primary-color);
+    padding: 20px;
 }
