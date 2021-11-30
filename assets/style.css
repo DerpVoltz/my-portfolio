@@ -1,5 +1,6 @@
 :root {
     --primary-color: #76c6c7;
+    --secondary-color: #374E6E;
 }
 
 * {
@@ -61,4 +62,30 @@ header ul li a {
 .hero div {
     background-color: var(--primary-color);
     padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-me div {
+    margin: 50px 100px 200px 100px;
+    padding: 10px 10px 100px 50px;
+    color: var(--secondary-color);
+    border-right: 5px solid var(--secondary-color);
+    font-size: 36px;
+    text-align: right;
+}
+
+.about-me p {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.run-buddy img {
+    width: 500px;
+    height: auto;
 }
