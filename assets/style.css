@@ -1,6 +1,7 @@
 :root {
     --primary-color: #76c6c7;
     --secondary-color: #374E6E;
+    --header-font: 36px;
 }
 
 * {
@@ -62,30 +63,48 @@ header ul li a {
 .hero div {
     background-color: var(--primary-color);
     padding: 20px;
+    display: block;
 }
 
 .about-me {
     display: flex;
-    height: 300px;
+    height: auto;
     flex-wrap: wrap;
-    justify-content: center;
+
 }
 
 .about-me div {
-    margin: 50px 100px 200px 100px;
     padding: 10px 10px 100px 50px;
+}
+
+.left-aligned {
+    margin: 50px 100px auto 100px;
     color: var(--secondary-color);
     border-right: 5px solid var(--secondary-color);
-    font-size: 36px;
+    font-size: var(--header-font);
     text-align: right;
 }
 
 .about-me p {
-    width: 70%;
+    width: 60%;
     margin-top: 50px;
 }
 
 .run-buddy img {
     width: 500px;
     height: auto;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+#my-work-title {
+    padding: 10px 23px 250px 50px;
+}
+
+.run-buddy {
+    margin-top: 50px;
 }
