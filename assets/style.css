@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
 /* Styling Header */
 header {
     display: flex;
@@ -34,7 +38,6 @@ header a {
 header ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -100,7 +103,7 @@ header ul li a {
 }
 
 #my-work-title {
-    padding: 10px 23px 1080px 50px;
+    padding: 10px 23px 1080px 60px;
 }
 
 .work-links {
@@ -155,20 +158,108 @@ footer {
     flex-wrap: wrap;
     height: auto;
     justify-content: space-between;
+    align-content: center;
 }
 
 footer div {
-    padding: 10px 10px 50px 13px; 
+    padding: 10px 10px 50px 7px; 
 }
 
 footer ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    height: 300px;
+    align-content: center;
+    margin-right: 500px;
 }
 
 footer ul li a {
     text-decoration: none;
-    color: var(--primary-color);
-    margin 
+    color: black;
+    margin: 20px;
+    font-size: 26px;
+    border-bottom: 5px solid var(--secondary-color);
+
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header ul {
+        margin: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .left-aligned{
+        border-bottom: 5px solid var(--secondary-color);
+        text-align: center;
+        border-right: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-content: center;
+        padding: 20px;
+    }
+
+    #my-work-title {
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .about-me div {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .about-me p {
+        text-align: center;
+        margin: 10px 20px 10px 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .work-links {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    footer div {
+        padding: 10px 20px 10px 20px;
+        max-width: 70%;
+    }
+    
+    footer ul {
+        margin: 0;
+    }
 }
