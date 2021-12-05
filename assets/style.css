@@ -91,52 +91,84 @@ header ul li a {
     flex: 1 30%;
 }
 
-/*.run-buddy img {
-    width: 700px;
-    height: auto;
-    margin-left: 175px;
-
-}*/
-
 .projects {
     display: flex;
     flex-wrap: row wrap;
-    height: 600px;
+    height: auto;
     max-width: 100%;
     justify-content: space-between;
 }
 
 #my-work-title {
-    padding: 10px 23px 300px 50px;
+    padding: 10px 23px 1080px 50px;
 }
 
 .work-links {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .work-links nav {
-    flex: 1 0 30%;
-    max-width: 60%;
+    flex: 1 0 40%;
+    max-width: 100%;
     height: 250px;
-    border: 2px solid var(--primary-color);
-    margin: 40px;
-    opacity: 60%;
+    border: 5px solid var(--primary-color);
+    margin: 10px;
+    position: relative;
 }
 
-.work-links nav:hover {
-    opacity: 100%;
-}
+
 
 #big-img {
-    flex: 1 0 80%;
+    flex: 1 0 90%;
     justify-self: center;
-    height: 400px;
+    height: 600px;
 }
 
-.projects img {
+.work-links img {
     object-fit: fill;
     width: 100%;
     height: 100%;
+    opacity: 60%;
+}
+
+.work-links img:hover {
+    opacity: 100%;
+}
+
+.work-links nav div {
+    position: absolute;
+    background-color: var(--primary-color);
+    z-index: 1;
+    bottom: 10px;
+    font-size: 30px;
+}
+
+.bottom-txt {
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+}
+
+footer div {
+    padding: 10px 10px 50px 13px; 
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin 
 }
