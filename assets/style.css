@@ -52,21 +52,35 @@ header ul li a {
 /* Styling Hero */
 .hero {
     background-image: url(./images/hero-background.jpg);
-    padding: 70px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 160px;
+    height: 200px;
+    justify-content: space-around;
 }
 
-.hero div {
+.subtitle {
     background-color: var(--primary-color);
     padding: 20px;
-    display: block;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.pic-div {
+    justify-self: flex-start;
+}
+
+.my-pic {
+    background-color: var(--primary-color);
+    align-self: center;
+    border: 5px solid var(--primary-color);
+    margin: 26px;
+    margin-right: 1000px;
+    width: 150px;
+    height: auto;
+    display: block;   
 }
 
 .about-me {
@@ -206,6 +220,13 @@ footer ul li a {
     }
 }
 
+@media screen and (max-width: 900px) {
+.my-pic {
+    margin: 0;
+}
+
+}
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
     .left-aligned{
@@ -223,6 +244,10 @@ footer ul li a {
     #my-work-title {
         text-align: center;
         padding: 10px 20px 10px 20px;
+    }
+
+    .my-pic {
+        margin: 0;
     }
 
     .about-me {
