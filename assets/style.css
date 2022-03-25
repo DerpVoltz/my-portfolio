@@ -40,6 +40,7 @@ header ul {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    justify-content: space-between;
 }
 
 header ul li a {
@@ -47,6 +48,8 @@ header ul li a {
     font-size: 26px;
     border-bottom: 5px solid var(--primary-color);
     margin: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Styling Hero */
@@ -58,28 +61,25 @@ header ul li a {
     display: flex;
     flex-wrap: wrap;
     height: 200px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .subtitle {
     background-color: var(--primary-color);
     padding: 20px;
+    margin-right: 0px;
     justify-self: flex-end;
     align-self: flex-end;
-}
-
-.pic-div {
-    justify-self: flex-start;
 }
 
 .my-pic {
     background-color: var(--primary-color);
     align-self: center;
-    border: 5px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     margin: 26px;
-    margin-right: 1000px;
-    width: 150px;
+    width: 155px;
     height: auto;
+    border-radius: 50%;
     display: block;   
 }
 
@@ -177,6 +177,8 @@ footer {
 
 footer div {
     padding: 10px 10px 50px 7px; 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer ul {
@@ -185,7 +187,12 @@ footer ul {
     flex-wrap: wrap;
     height: 300px;
     align-content: center;
-    margin-right: 500px;
+    justify-content: space-around;
+    flex: 1 1 80px;
+}
+
+footer ul li {
+    margin: 3px;
 }
 
 footer ul li a {
@@ -194,7 +201,6 @@ footer ul li a {
     margin: 20px;
     font-size: 26px;
     border-bottom: 5px solid var(--secondary-color);
-
 }
 
 @media screen and (max-width: 980px) {
@@ -216,16 +222,88 @@ footer ul li a {
     }
 
     header ul li a {
+        padding: 1px;
+        font-size: 26px;
+        margin: 10px;
+    }
+
+    header ul li {
+        margin: 3px;
+    }
+
+    footer ul {
+        margin-right: 0;
+    }
+    
+    
+}
+
+@media screen and (max-width: 780px) {   
+    #my-work-title {
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .left-aligned{
+        border-bottom: 5px solid var(--secondary-color);
+        text-align: center;
+        border-right: none;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .about-me div {
+        padding: 10px 20px 10px 20px;
+        display: inline-block;
+    }
+
+    .about-me p {
+        text-align: center;
+        margin: 10px 20px 10px 20px;
+        width: 90%;
+    }
+
+    header ul li a {
+        padding: 1px;
         font-size: 20px;
+        border-bottom: 2px solid var(--primary-color);
+        margin: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    footer div {
+        padding: 10px 20px 10px 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer h1 {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+    
+    footer ul li{
+        margin: 5px;
     }
 }
 
-@media screen and (max-width: 900px) {
-.my-pic {
-    margin: 0;
-}
-
-}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -233,6 +311,12 @@ footer ul li a {
         border-bottom: 5px solid var(--secondary-color);
         text-align: center;
         border-right: none;
+    }
+
+    header ul li a {
+        padding: 1px;
+        font-size: 26px;
+        margin: 10px;
     }
 
     header {
@@ -257,11 +341,13 @@ footer ul li a {
 
     .about-me div {
         padding: 10px 20px 10px 20px;
+        display: inline-block;
     }
 
     .about-me p {
         text-align: center;
-        margin: 10px 20px 10px 20px;
+        margin-right: 0;
+        padding: 0;
     }
 
     .projects {
@@ -282,9 +368,10 @@ footer ul li a {
     footer div {
         padding: 10px 20px 10px 20px;
         max-width: 70%;
+        text-align: center;
     }
     
     footer ul {
-        margin: 0;
+        margin: 5px;
     }
 }
